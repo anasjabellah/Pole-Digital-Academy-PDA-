@@ -2,8 +2,8 @@ package com.example.digital_academy_pda.Entities;
 
 public class Administrateur  extends User {
 
-    private  String Login ;
-    private  String Password ;
+    private String Login ;
+    private String Password ;
 
     public Administrateur(String nom, String prenom, String email, String telephone, String login, String password) {
         super(nom, prenom, email, telephone);
