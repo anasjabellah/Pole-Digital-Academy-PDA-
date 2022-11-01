@@ -28,7 +28,7 @@ public class Activite {
     }
 
     public void setTitre(String titre) {
-        Titre = titre;
+        this.Titre = titre;
     }
 
     public String getDescriptif() {
@@ -36,7 +36,7 @@ public class Activite {
     }
 
     public void setDescriptif(String descriptif) {
-        Descriptif = descriptif;
+        this.Descriptif = descriptif;
     }
 
     public String getType() {
@@ -44,7 +44,7 @@ public class Activite {
     }
 
     public void setType(String type) {
-        Type = type;
+        this.Type = type;
     }
 
     public String getStatut() {
@@ -60,7 +60,7 @@ public class Activite {
     }
 
     public void setDateDebut(Date dateDebut) {
-        DateDebut = dateDebut;
+        this.DateDebut = dateDebut;
     }
 
     public Date getDateDeFin() {
@@ -68,7 +68,7 @@ public class Activite {
     }
 
     public void setDateDeFin(Date dateDeFin) {
-        DateDeFin = dateDeFin;
+        this.DateDeFin = dateDeFin;
     }
 
     public Responsable getResponsable() {
