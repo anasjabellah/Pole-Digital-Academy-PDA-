@@ -10,8 +10,10 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // do get logic here
+        // retun to login page
+        request.getRequestDispatcher("login.jsp").forward(request, response);
         response.getWriter().println("Hello from LoginServlet");
+        // do get logic here
     }
 
     @Override
