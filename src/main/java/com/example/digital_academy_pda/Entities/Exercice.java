@@ -22,7 +22,7 @@ public class Exercice {
     }
 
     public void setAnnee(Date annee) {
-        this.Annee = annee;
+        Annee = annee;
     }
 
     public Date getDateDebut() {
@@ -30,7 +30,7 @@ public class Exercice {
     }
 
     public void setDateDebut(Date dateDebut) {
-        this.DateDebut = dateDebut;
+        DateDebut = dateDebut;
     }
 
     public Date getDateDeFin() {
@@ -38,7 +38,7 @@ public class Exercice {
     }
 
     public void setDateDeFin(Date dateDeFin) {
-        this.DateDeFin = dateDeFin;
+        DateDeFin = dateDeFin;
     }
 
     public String getStatut() {
