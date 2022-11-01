@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="Digital_Academy_PDA-1.0-SNAPSHOT.war">
+    <root id="archive" name="Pole-Digital-Academy-PDA-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="Pole-Digital-Academy-PDA-:war exploded" />
     </root>
   </artifact>
