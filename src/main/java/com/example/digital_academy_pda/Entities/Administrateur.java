@@ -5,8 +5,8 @@ public class Administrateur  extends User {
     private String Login ;
     private String Password ;
 
-    public Administrateur(String nom, String prenom, String email, String telephone, String login, String password) {
-        super(nom, prenom, email, telephone);
+    public Administrateur(String nom, String prenom, String email, String telephone, Role role , String login, String password) {
+        super(nom, prenom, email, telephone,role);
         Login = login;
         Password = password;
     }

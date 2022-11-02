@@ -30,7 +30,7 @@ public class Exercice {
     }
 
     public void setDateDebut(Date dateDebut) {
-        DateDebut = dateDebut;
+        this.DateDebut = dateDebut;
     }
 
     public Date getDateDeFin() {
@@ -38,7 +38,7 @@ public class Exercice {
     }
 
     public void setDateDeFin(Date dateDeFin) {
-        DateDeFin = dateDeFin;
+        this.DateDeFin = dateDeFin;
     }
 
     public String getStatut() {

@@ -7,11 +7,14 @@ public class User {
     private String email ;
     private String telephone ;
 
-    public User(String nom, String prenom, String email, String telephone) {
+    private Role role ;
+
+    public User(String nom, String prenom, String email, String telephone, Role role) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.telephone = telephone;
+        this.role = role;
     }
 
     public String getNom() {
@@ -46,4 +49,11 @@ public class User {
         this.telephone = telephone;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 }
