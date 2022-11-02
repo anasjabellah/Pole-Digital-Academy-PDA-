@@ -1,7 +1,6 @@
 package com.example.digital_academy_pda.Entities;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.Table;
 
 @Entity
 @TableGenerator(name = "User")
