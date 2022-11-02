@@ -1,7 +1,17 @@
 package com.example.digital_academy_pda.Entities;
 
-public class User {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import org.hibernate.annotations.Table;
 
+@Entity
+@Table(name = "User")
+public class User {
+    // This tells Hibernate to make a table out of this class
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nom ;
     private String prenom ;
     private String email ;
