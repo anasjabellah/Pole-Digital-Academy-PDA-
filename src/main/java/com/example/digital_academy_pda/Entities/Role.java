@@ -1,18 +1,43 @@
 package com.example.digital_academy_pda.Entities;
 
+import jakarta.persistence.*;
+
+import java.util.List;
+@Entity
 public class Role {
+    @Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
+    private int id ;
+    private String name ;
 
-    private String roleUser ;
+    @OneToMany
+    List<User> users ;
 
-    public Role(String roleUser) {
-        this.roleUser = roleUser;
+    public Role() {
+
     }
 
-    public String getRoleUser() {
-        return roleUser;
+    public int getId() {
+        return id;
     }
 
-    public void setRoleUser(String roleUser) {
-        this.roleUser = roleUser;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 }

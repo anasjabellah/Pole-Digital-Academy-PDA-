@@ -1,12 +1,10 @@
 package com.example.digital_academy_pda.Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.*;
 import org.hibernate.annotations.Table;
 
 @Entity
-@Table(name = "User")
+@TableGenerator(name = "User")
 public class User {
     // This tells Hibernate to make a table out of this class
     @Id
@@ -17,6 +15,7 @@ public class User {
     private String email ;
     private String telephone ;
 
+    @ManyToOne
     private Role role ;
 
     public User(String nom, String prenom, String email, String telephone, Role role) {
@@ -25,6 +24,10 @@ public class User {
         this.email = email;
         this.telephone = telephone;
         this.role = role;
+    }
+
+    public User() {
+
     }
 
     public String getNom() {
@@ -65,5 +68,13 @@ public class User {
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
