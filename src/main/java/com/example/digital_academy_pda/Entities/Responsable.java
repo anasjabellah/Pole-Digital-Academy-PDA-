@@ -9,7 +9,10 @@ public class Responsable  extends User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
+
+    @Column(name = "Domaine")
     private  String Domaine ;
+    @Column(name = "Type")
     private  String Type ;
 
 

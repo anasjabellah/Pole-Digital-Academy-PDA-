@@ -10,6 +10,7 @@ public class Administrateur  extends User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
+    
     private String Login ;
     private String Password ;
 

@@ -11,9 +11,14 @@ public class Exercice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
+
+    @Column(name = "Annee")
     private Date Annee ;
+    @Column(name = "DateDebut")
     private  Date  DateDebut ;
+    @Column(name = "DateDeFin")
     private  Date DateDeFin ;
+    @Column(name = "statut")
     private  String statut ;
 
     public Exercice(Long id, Date annee, Date dateDebut, Date dateDeFin, String statut) {
@@ -24,9 +29,7 @@ public class Exercice {
         this.statut = statut;
     }
 
-    public Exercice() {
-
-    }
+    public Exercice() {}
 
     public Date getAnnee() {
         return Annee;

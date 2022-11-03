@@ -9,7 +9,9 @@ public class Participant extends  User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
+    @Column(name = "Domaine")
     private String Domaine ;
+    @Column(name = "Structure")
     private String Structure ;
 
     public Participant(String nom, String prenom, String email, String telephone, Role role, Long id, String domaine, String structure) {

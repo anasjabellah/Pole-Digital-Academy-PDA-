@@ -10,6 +10,7 @@ public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
     private int id ;
+    @Column(name = "name")
     private String name ;
 
     @OneToMany
