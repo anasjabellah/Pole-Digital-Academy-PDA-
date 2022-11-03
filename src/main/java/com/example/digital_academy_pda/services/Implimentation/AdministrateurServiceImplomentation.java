@@ -1,4 +1,15 @@
 package com.example.digital_academy_pda.services.Implimentation;
 
-public class AdministrateurServiceImplomentation {
+import com.example.digital_academy_pda.services.AdministrateurService;
+
+public class AdministrateurServiceImplomentation implements AdministrateurService {
+    @Override
+    public void updateAdministrateur(long id) {
+
+    }
+
+    @Override
+    public void remmoveAdministrateur(long id) {
+
+    }
 }

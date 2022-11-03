@@ -8,4 +8,12 @@ public class administratorimp implements administrateurDao {
     }
     public void logout() {
     }
+
+    public void updateAdministrateur(long id){
+
+    };
+
+    public void remmoveAdministrateur(long id){
+
+    };
 }
