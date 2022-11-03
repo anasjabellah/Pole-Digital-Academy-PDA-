@@ -3,6 +3,7 @@ package com.example.digital_academy_pda.Entities;
 import jakarta.persistence.*;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @TableGenerator(name = "User")
 public class User {
     // This tells Hibernate to make a table out of this class

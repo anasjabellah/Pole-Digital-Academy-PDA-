@@ -7,10 +7,6 @@ import jakarta.persistence.*;
 @TableGenerator(name = "Administrateur")
 public class Administrateur  extends User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
-    
     private String Login ;
     private String Password ;
 
@@ -40,11 +36,6 @@ public class Administrateur  extends User {
         this.Password = password;
     }
 
-    @Override
-    public Long getId() {return id;}
-
-    @Override
-    public void setId(Long id) {this.id = id;}
 }
 
 

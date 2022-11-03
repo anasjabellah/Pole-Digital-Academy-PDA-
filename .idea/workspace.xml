@@ -12,7 +12,9 @@
     <list default="true" id="2766f1f6-1fe2-453f-983e-3b8189c0106f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Administrateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Administrateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Exercice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Exercice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Responsable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Responsable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +159,7 @@
       <updated>1667392713586</updated>
       <workItem from="1667392715175" duration="236000" />
       <workItem from="1667392982029" duration="54000" />
-      <workItem from="1667393174774" duration="10706000" />
+      <workItem from="1667393174774" duration="11398000" />
     </task>
     <servers />
   </component>

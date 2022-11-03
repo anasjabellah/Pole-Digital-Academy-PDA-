@@ -6,19 +6,14 @@ import jakarta.persistence.*;
 @TableGenerator(name = "Responsable")
 public class Responsable  extends User{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
-
     @Column(name = "Domaine")
     private  String Domaine ;
     @Column(name = "Type")
     private  String Type ;
 
 
-    public Responsable(String nom, String prenom, String email, String telephone, Role role, long id, String domaine, String type) {
+    public Responsable(String nom, String prenom, String email, String telephone, Role role, String domaine, String type) {
         super(nom, prenom, email, telephone, role);
-        this.id = id;
         this.Domaine = domaine;
         this.Type = type;
     }
@@ -44,12 +39,4 @@ public class Responsable  extends User{
         this.Type = type;
     }
 
-    @Override
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 }
