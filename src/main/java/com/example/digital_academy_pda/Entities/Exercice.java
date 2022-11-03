@@ -1,20 +1,31 @@
 package com.example.digital_academy_pda.Entities;
 
+import jakarta.persistence.*;
+
 import java.util.Date;
 
+@Entity
+@TableGenerator(name = "Exercice")
 public class Exercice {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id ;
     private Date Annee ;
     private  Date  DateDebut ;
     private  Date DateDeFin ;
     private  String statut ;
 
-
-    public Exercice(Date annee, Date dateDebut, Date dateDeFin, String statut) {
+    public Exercice(Long id, Date annee, Date dateDebut, Date dateDeFin, String statut) {
+        this.id = id;
         this.Annee = annee;
         this.DateDebut = dateDebut;
         this.DateDeFin = dateDeFin;
         this.statut = statut;
+    }
+
+    public Exercice() {
+
     }
 
     public Date getAnnee() {
@@ -48,4 +59,7 @@ public class Exercice {
     public void setStatut(String statut) {
         this.statut = statut;
     }
+
+    public Long getId() {return id;}
+    public void setId(Long id) {this.id = id;}
 }

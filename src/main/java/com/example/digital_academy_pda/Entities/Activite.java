@@ -1,19 +1,28 @@
 package com.example.digital_academy_pda.Entities;
 
+import jakarta.persistence.*;
+
 import java.util.Date;
 
+@Entity
+@TableGenerator(name = "Activite")
 public class Activite {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id ;
     private  String Titre ;
     private  String Descriptif ;
     private  String Type;
     private  String statut ;
     private  Date DateDebut ;
     private  Date DateDeFin ;
+    @ManyToOne
     private  Responsable responsable ;
 
 
-    public Activite(String titre, String descriptif, String type, String statut, Date dateDebut, Date dateDeFin, Responsable responsable) {
+    public Activite(Long id, String titre, String descriptif, String type, String statut, Date dateDebut, Date dateDeFin, Responsable responsable) {
+        this.id = id;
         this.Titre = titre;
         this.Descriptif = descriptif;
         this.Type = type;
@@ -21,6 +30,10 @@ public class Activite {
         this.DateDebut = dateDebut;
         this.DateDeFin = dateDeFin;
         this.responsable = responsable;
+    }
+
+    public Activite() {
+
     }
 
     public String getTitre() {
@@ -78,4 +91,8 @@ public class Activite {
     public void setResponsable(Responsable responsable) {
         this.responsable = responsable;
     }
+
+    public Long getId() {return id;}
+
+    public void setId(Long id) {this.id = id;}
 }

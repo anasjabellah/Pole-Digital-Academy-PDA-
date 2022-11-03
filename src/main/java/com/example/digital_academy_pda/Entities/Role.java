@@ -1,9 +1,11 @@
 package com.example.digital_academy_pda.Entities;
 
 import jakarta.persistence.*;
-
 import java.util.List;
+
 @Entity
+@TableGenerator(name = "Role")
+
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
