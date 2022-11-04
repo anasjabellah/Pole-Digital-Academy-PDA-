@@ -23,7 +23,7 @@ public class User {
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "role_id")
     private Role role ;
 
     public User(String nom, String prenom, String email, String telephone, Role role) {

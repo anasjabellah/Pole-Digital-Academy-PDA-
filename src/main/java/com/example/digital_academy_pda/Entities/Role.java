@@ -9,6 +9,7 @@ import java.util.List;
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
+    @Column(name = "role_id")
     private int id ;
     @Column(name = "name")
     private String name ;
