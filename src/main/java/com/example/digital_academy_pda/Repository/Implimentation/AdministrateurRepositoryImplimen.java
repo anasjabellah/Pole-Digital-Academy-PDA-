@@ -5,7 +5,7 @@ import com.example.digital_academy_pda.DAO.implementation.administratorimp;
 import com.example.digital_academy_pda.Entities.Administrateur;
 import com.example.digital_academy_pda.Repository.AdministrateurRepository;
 
-public class AdministrateurRepositoryImplimen {
+public class AdministrateurRepositoryImplimen implements AdministrateurRepository {
 
 
     administrateurDao adminDoa = new administratorimp();
@@ -15,4 +15,4 @@ public class AdministrateurRepositoryImplimen {
         // TODO Auto-generated method stub
         return adminDoa.add(admin);
     }
-    }
+}

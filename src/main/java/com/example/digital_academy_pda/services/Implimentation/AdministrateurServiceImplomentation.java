@@ -7,10 +7,10 @@ import com.example.digital_academy_pda.services.AdministrateurService;
 
 public class AdministrateurServiceImplomentation implements AdministrateurService {
 
-        AdministrateurRepository adminRepository = new AdministrateurRepositoryImplimen();
+    AdministrateurRepository adminRepository = new AdministrateurRepositoryImplimen();
+
     @Override
     public Administrateur add(Administrateur admin) {
-        // TODO Auto-generated method stub
         return adminRepository.add(admin);
     }
 }

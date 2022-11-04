@@ -12,8 +12,8 @@ public class Role {
     private int id ;
     @Column(name = "name")
     private String name ;
-
-    @OneToMany
+    @Transient
+    @OneToMany(mappedBy = "role")
     List<User> users ;
 
     public Role() {

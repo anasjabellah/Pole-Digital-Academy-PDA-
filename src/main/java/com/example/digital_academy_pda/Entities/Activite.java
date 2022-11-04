@@ -24,7 +24,6 @@ public class Activite {
     private  Date DateDebut ;
     @Column(name = "DateDeFin")
     private  Date DateDeFin ;
-    @Column(name = "responsableID")
     @ManyToOne
     private  Responsable responsable ;
 

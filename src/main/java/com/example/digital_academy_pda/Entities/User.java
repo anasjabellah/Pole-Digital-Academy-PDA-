@@ -1,5 +1,6 @@
 package com.example.digital_academy_pda.Entities;
 
+import jakarta.enterprise.inject.TransientReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -20,7 +21,9 @@ public class User {
     @Column(name = "Telephone")
     private String telephone ;
 
-    @ManyToOne
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "id")
     private Role role ;
 
     public User(String nom, String prenom, String email, String telephone, Role role) {
