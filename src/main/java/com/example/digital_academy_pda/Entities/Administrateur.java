@@ -7,25 +7,25 @@ import jakarta.persistence.*;
 @TableGenerator(name = "Administrateur")
 public class Administrateur  extends User {
 
-    private String Login ;
+    private String username ;
     private String Password ;
 
     public Administrateur(String nom, String prenom, String email, String telephone, Role role , String login, String password) {
         super(nom, prenom, email, telephone,role);
-        Login = login;
-        Password = password;
+        this.username = username;
+        this.Password = password;
     }
 
     public Administrateur() {
 
     }
 
-    public String getLogin() {
-        return Login;
+    public String getUsername() {
+        return username;
     }
 
-    public void setLogin(String login) {
-        this.Login = login;
+    public void setUsername(String login) {
+        this.username = login;
     }
 
     public String getPassword() {

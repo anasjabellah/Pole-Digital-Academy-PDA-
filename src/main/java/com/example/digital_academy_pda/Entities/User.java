@@ -1,21 +1,29 @@
 package com.example.digital_academy_pda.Entities;
 
+import jakarta.enterprise.inject.TransientReference;
 import jakarta.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@TableGenerator(name = "User")
+@Table(name = "User")
 public class User {
     // This tells Hibernate to make a table out of this class
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
     private Long id;
+    @Column(name = "Nom")
     private String nom ;
+    @Column(name = "Prenom")
     private String prenom ;
+    @Column(name = "Email")
     private String email ;
+    @Column(name = "Telephone")
     private String telephone ;
 
-    @ManyToOne
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "id")
     private Role role ;
 
     public User(String nom, String prenom, String email, String telephone, Role role) {

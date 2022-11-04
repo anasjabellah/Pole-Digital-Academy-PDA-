@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 @TableGenerator(name = "Responsable")
 public class Responsable  extends User{
 
+
     @Column(name = "Domaine")
     private  String Domaine ;
     @Column(name = "Type")
