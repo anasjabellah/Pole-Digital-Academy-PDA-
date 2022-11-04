@@ -5,8 +5,6 @@ import com.example.digital_academy_pda.services.AdministrateurService;
 
 public interface AdministrateurRepository {
 
-    public void update(long id);
-
-    public void remmove(long id);
+    Administrateur add(Administrateur admin);
 
 }

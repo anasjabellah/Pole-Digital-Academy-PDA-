@@ -1,15 +1,16 @@
 package com.example.digital_academy_pda.services.Implimentation;
 
+import com.example.digital_academy_pda.Entities.Administrateur;
+import com.example.digital_academy_pda.Repository.AdministrateurRepository;
+import com.example.digital_academy_pda.Repository.Implimentation.AdministrateurRepositoryImplimen;
 import com.example.digital_academy_pda.services.AdministrateurService;
 
 public class AdministrateurServiceImplomentation implements AdministrateurService {
+
+        AdministrateurRepository adminRepository = new AdministrateurRepositoryImplimen();
     @Override
-    public void updateAdministrateur(long id) {
-
-    }
-
-    @Override
-    public void remmoveAdministrateur(long id) {
-
+    public Administrateur add(Administrateur admin) {
+        // TODO Auto-generated method stub
+        return adminRepository.add(admin);
     }
 }
