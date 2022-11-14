@@ -18,27 +18,19 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // gettting the username and password from the login page
-        String username = request.getParameter("email");
+        String email = request.getParameter("email");
         String password = request.getParameter("password");
         // print the username and password
         // check if the username and password is empty
-        if (username.isEmpty() || password.isEmpty()) {
+        if (email.isEmpty() || password.isEmpty()) {
             // if the username or password is empty
             // return to login page
             request.getRequestDispatcher("login.jsp").forward(request, response);
         } else {
-            // if the username and password is not empty
-            // check if the username and password is correct
-            if (username.equals("admin") && password.equals("admin")) {
-                // if the username and password is correct
-                // return to home page
-                request.getRequestDispatcher("home.jsp").forward(request, response);
-            } else {
-                // if the username and password is not correct
-                // return to login page
-                request.getRequestDispatcher("login.jsp").forward(request, response);
-            }
+            // setting the email in the entity
+
+
         }
-        response.getWriter().println("Username: " + username + " Password: " + password);
+        response.getWriter().println("Username: " + email + " Password: " + password);
     }
 }
