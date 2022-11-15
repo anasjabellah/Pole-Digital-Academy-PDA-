@@ -100,6 +100,7 @@
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>

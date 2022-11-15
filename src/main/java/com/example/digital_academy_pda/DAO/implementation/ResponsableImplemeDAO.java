@@ -56,8 +56,6 @@ public class ResponsableImplemeDAO implements ResponsableDAO {
             ex.printStackTrace();
         }
         return responsable;
-
-
     }
 
     @Override
