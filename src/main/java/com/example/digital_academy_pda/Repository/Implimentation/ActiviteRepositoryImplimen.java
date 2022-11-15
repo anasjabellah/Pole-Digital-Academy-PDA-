@@ -1,11 +1,11 @@
-package com.example.digital_academy_pda.services.Implimentation;
+package com.example.digital_academy_pda.Repository.Implimentation;
 
 import com.example.digital_academy_pda.Entities.Activite;
-import com.example.digital_academy_pda.services.ActiviteService;
+import com.example.digital_academy_pda.Repository.ActiviteRepository;
 
 import java.util.List;
 
-public class ActiviteServiceImplomentation implements ActiviteService {
+public class ActiviteRepositoryImplimen implements ActiviteRepository {
 
     @Override
     public void Add(Activite activite) {

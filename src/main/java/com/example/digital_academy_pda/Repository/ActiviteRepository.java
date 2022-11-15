@@ -1,11 +1,10 @@
-package com.example.digital_academy_pda.services;
+package com.example.digital_academy_pda.Repository;
 
 import com.example.digital_academy_pda.Entities.Activite;
-import com.example.digital_academy_pda.Entities.Responsable;
 
 import java.util.List;
 
-public interface ActiviteService {
+public interface ActiviteRepository {
 
     public void  Add(Activite activite);
 
@@ -14,4 +13,5 @@ public interface ActiviteService {
     public  void  remove(long id);
 
     public List<Activite> listActivite();
+
 }

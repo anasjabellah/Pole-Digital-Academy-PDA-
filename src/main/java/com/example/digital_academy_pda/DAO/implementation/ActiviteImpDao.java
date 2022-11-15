@@ -1,53 +1,76 @@
 package com.example.digital_academy_pda.DAO.implementation;
 
-import com.example.digital_academy_pda.DAO.ResponsableDAO;
+import com.example.digital_academy_pda.DAO.ActiviteDao;
+import com.example.digital_academy_pda.Entities.Activite;
 import com.example.digital_academy_pda.Entities.Responsable;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
-
 import java.util.List;
 
-public class ResponsableImplemeDAO implements ResponsableDAO {
+
+public class ActiviteImpDao implements ActiviteDao {
 
 
     @Override
-    public Responsable add(Responsable responsable) {
+    public Activite Add(Activite activite) {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist(responsable);
+        entityManager.persist(activite);
         entityManager.getTransaction().commit();
         entityManager.close();
-        return responsable;
+        return activite;
+
+    }
+
+
+    @Override
+    public void edit(Activite activite) {
+
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+
+        EntityManager entityManager = emf.createEntityManager();
+        entityManager.getTransaction().begin();
+        entityManager.merge(activite);
+        entityManager.getTransaction().commit();
+        entityManager.close();
 
     }
 
     @Override
-    public void edit(Responsable responsable) {
-
+    public void remove(long id) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-
         EntityManager entityManager = emf.createEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.merge(responsable);
+        Responsable responsable = entityManager.find(Responsable.class, id);
+        entityManager.remove(responsable);
         entityManager.getTransaction().commit();
         entityManager.close();
-
     }
 
     @Override
-    public Responsable getResponsable(Long id){
+    public List<Activite> listActivite() {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+        EntityManager entityManager = emf.createEntityManager();
+        entityManager.getTransaction().begin();
+        Query query = entityManager.createQuery("select a from Activite a");
+        entityManager.getTransaction().commit();
+        return query.getResultList();
+    }
+
+    @Override
+    public Activite getActivite(long id) {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
-        Responsable responsable = new Responsable();
+        Activite activite = new Activite();
+
         try {
-            Query query =  entityManager.createQuery("select r from Responsable r where r.id = id");
-            responsable = (Responsable) query.getSingleResult();
+            Query query =  entityManager.createQuery("select a from Activite a where a.id = id");
+            activite = (Activite) query.getSingleResult();
             entityManager.getTransaction().commit();
         } catch (Exception ex) {
 
@@ -55,26 +78,9 @@ public class ResponsableImplemeDAO implements ResponsableDAO {
 
             ex.printStackTrace();
         }
-        return responsable;
+
+        return activite;
     }
 
-    @Override
-    public void delete(int Id) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-        EntityManager entityManager = emf.createEntityManager();
-        Responsable responsable = entityManager.find(Responsable.class, Id);
-        entityManager.remove(responsable);
-        entityManager.getTransaction().commit();
-        entityManager.close();
-    }
 
-    @Override
-    public List<Responsable> listResponsable() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-        EntityManager entityManager = emf.createEntityManager();
-        entityManager.getTransaction().begin();
-        Query query = entityManager.createQuery("select r from Responsable r");
-        entityManager.getTransaction().commit();
-        return query.getResultList();
-    }
 }
