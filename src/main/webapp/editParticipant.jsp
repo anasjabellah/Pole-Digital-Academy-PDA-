@@ -1,4 +1,6 @@
-<%@ page import="com.example.digital_academy_pda.Entities.Participant" %><%--
+<%@ page import="com.example.digital_academy_pda.Entities.Participant" %>
+<%@ page import="com.example.digital_academy_pda.Entities.Role" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Youcode
   Date: 09/11/2022
@@ -61,8 +63,20 @@
       <label  class="form-label">Structure</label>
       <input type="text" name="Structure" class="form-control" value="<%= participant.getStructure() %>" >
     </div>
+    <div class="mb-3">
+      <label  class="form-label">Role</label>
+      <select name="Role" class="form-select" >
+        <option disabled selected value="">Select here</option>
+        <%
+          List<Role> roles = (List<Role>) request.getAttribute("roleList");
+          for (Role role : roles) {
+        %>
+        <option value="<%=role.getId()%>"><%=role.getName()%></option>
+        <% }
+        %>
 
-
+      </select>
+    </div>
     <button type="submit" class="btn btn-primary">Edit</button>
   </form>
 </div>

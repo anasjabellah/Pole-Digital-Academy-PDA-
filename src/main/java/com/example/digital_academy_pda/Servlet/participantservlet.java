@@ -3,6 +3,8 @@ package com.example.digital_academy_pda.Servlet;
 import com.example.digital_academy_pda.Entities.Participant;
 // importing participant dao
 import com.example.digital_academy_pda.DAO.participantdao;
+// importing role service
+import com.example.digital_academy_pda.services.Implimentation.RoleServiceimp;
 
 import com.example.digital_academy_pda.Entities.Role;
 import com.example.digital_academy_pda.services.Implimentation.ParticipantServiceImplomentation;
@@ -24,13 +26,20 @@ public class participantservlet extends HttpServlet {
         urlPage = urlPage.replace("/Pole_Digital_Academy_PDA_war_exploded", "");
         switch (urlPage){
             case "/addParticipant":
-                request.getRequestDispatcher("/AddParticipant.jsp").forward(request, response);
+                // getting the list of roles
+                RoleServiceimp roleServiceimp = new RoleServiceimp();
+                List<Role> roleList = roleServiceimp.getAllRoles();
+                request.setAttribute("roleList", roleList);
+                request.getRequestDispatcher("AddParticipant.jsp").forward(request, response);
                 break;
             case "/editParticipant":
                 // getting the id of the participant from url
                 Long id = Long.parseLong(request.getParameter("id"));
                 // printing the id of the participant
                 System.out.println(id);
+                RoleServiceimp roleServiceimp1 = new RoleServiceimp();
+                List<Role> roleList1 = roleServiceimp1.getAllRoles();
+                request.setAttribute("roleList", roleList1);
                 request.setAttribute("participantt", participantService.getParticipant(id));
                 request.getRequestDispatcher("/editParticipant.jsp").forward(request, response);
                 break;
@@ -63,6 +72,8 @@ public class participantservlet extends HttpServlet {
                 String Domaine = request.getParameter("Domaine");
                 String Phone = request.getParameter("phone");
                 String Structure = request.getParameter("Structure");
+                // getting the role of the participant and storing it in a variable as int
+                int Role = Integer.parseInt(request.getParameter("Role"));
                 // checking if any parameter is empty
                 if (firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || Domaine.isEmpty() || Phone.isEmpty() || Structure.isEmpty()){
                     request.setAttribute("error", "Please fill all the fields");
@@ -84,6 +95,12 @@ public class participantservlet extends HttpServlet {
                     participant.setTelephone(Phone);
                     // setting the Structure of the participant
                     participant.setStructure(Structure);
+                    // Creating an instance of the RoleService
+                    RoleServiceimp roleService = new RoleServiceimp();
+                    // getting the role of the participant by id
+                    Role role = roleService.getRoleById(Role);
+                    // setting the role of the participant
+                    participant.setRole(role);
                     // updating the participant
                     participantService.updateParticipant(participant);
                     // redirecting to the list of participant
@@ -99,6 +116,8 @@ public class participantservlet extends HttpServlet {
                 Domaine = request.getParameter("Domaine");
                 Phone = request.getParameter("phone");
                 Structure = request.getParameter("Structure");
+                // getting the role of the participant and storing it in a variable as int
+                Role = Integer.parseInt(request.getParameter("Role"));
                 // checking if any parameter is empty
                 if (firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || Domaine.isEmpty() || Phone.isEmpty() || Structure.isEmpty()){
                     request.setAttribute("error", "Please fill all the fields");
@@ -118,7 +137,13 @@ public class participantservlet extends HttpServlet {
                     participant.setTelephone(Phone);
                     // setting the Structure of the participant
                     participant.setStructure(Structure);
-
+                    // Creating an instance of the RoleService
+                    RoleServiceimp roleService = new RoleServiceimp();
+                    // getting the role of the participant by id
+                    Role role = roleService.getRoleById(Role);
+                    // setting the role of the participant
+                    participant.setRole(role);
+                    // getting the role of the participant
                     // adding the participant
                     participantService.add(participant);
                     // redirecting to the list of participant

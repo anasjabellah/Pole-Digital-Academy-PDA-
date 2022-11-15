@@ -28,6 +28,7 @@
             <th scope="col">email</th>
             <th scope="col">Structure</th>
             <th scope="col">Domain</th>
+            <th scope="col">Role</th>
             <th> action </th>
         </tr>
         </thead>
@@ -45,6 +46,7 @@
             <td><%= participant.getEmail() %></td>
             <td><%= participant.getStructure() %></td>
             <td><%= participant.getDomaine()%></td>
+            <td><%= participant.getRole().getName() %></td>
             <td>
                 <a href="editParticipant?id=<%= participant.getId() %>" class="btn btn-primary">Edit</a>
                 <a href="DeletParticipant?id=<%= participant.getId() %>" class="btn btn-danger">Delete</a>
