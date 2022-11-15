@@ -1,23 +1,18 @@
 package com.example.digital_academy_pda.DAO.implementation;
-
-import com.example.digital_academy_pda.DAO.participantdao;
-import com.example.digital_academy_pda.Entities.Participant;
-
+import com.example.digital_academy_pda.DAO.roledao;
+import com.example.digital_academy_pda.Entities.Role;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-
-public class participantimp implements participantdao {
-    // method to save participant
-    @Override
-    public Participant addParticipant(Participant participant) {
-        // add participant to database using entity manager
+public class roledaoimp implements roledao {
+    // method to get role by id
+    public Role getRoleById(int id) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist(participant);
+        Role role = entityManager.find(Role.class, id);
         entityManager.getTransaction().commit();
         entityManager.close();
-        return participant;
+        return role;
     }
 }

@@ -64,6 +64,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.digital_academy_pda.services.Implimentation" />
       <recent name="com.example.digital_academy_pda.DAO.implementation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -183,6 +184,7 @@
       <workItem from="1668415275355" duration="6613000" />
       <workItem from="1668431406077" duration="4864000" />
       <workItem from="1668498307103" duration="1356000" />
+      <workItem from="1668499805246" duration="5681000" />
     </task>
     <servers />
   </component>
@@ -199,20 +201,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/role.java</url>
-          <line>3</line>
-          <properties class="com.example.digital_academy_pda.DAO.role" method="findbyid">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

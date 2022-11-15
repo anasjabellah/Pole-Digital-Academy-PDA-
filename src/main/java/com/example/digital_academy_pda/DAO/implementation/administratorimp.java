@@ -1,7 +1,7 @@
 package com.example.digital_academy_pda.DAO.implementation;
-
 import com.example.digital_academy_pda.DAO.administrateurDao;
 import com.example.digital_academy_pda.Entities.Administrateur;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

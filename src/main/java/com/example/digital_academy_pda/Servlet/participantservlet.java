@@ -5,6 +5,9 @@ import com.example.digital_academy_pda.Entities.Participant;
 import com.example.digital_academy_pda.DAO.participantdao;
 
 import com.example.digital_academy_pda.Entities.Role;
+import com.example.digital_academy_pda.services.Implimentation.ParticipantServiceImplomentation;
+import com.example.digital_academy_pda.services.Implimentation.RoleServiceimp;
+import com.example.digital_academy_pda.services.ParticipantService;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -29,9 +32,25 @@ public class participantservlet extends HttpServlet {
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
         String domain = request.getParameter("domain");
-        String structure = request.getParameter("structure");
-        String role = request.getParameter("role");
+        String structure = request.getParameter("Structure");
+        String role_id = request.getParameter("role");
+        // creating an instance of role
+        Role role = new RoleServiceimp().getRoleById(Integer.parseInt(role_id));
         // creating an instance of the participant entity and setting the parameters in the constructor
         Participant participant = new Participant(firstname, lastname, email, phone, role, domain, structure);
+        // seeting the setter methods
+        participant.setNom(lastname);
+        participant.setPrenom(firstname);
+        participant.setEmail(email);
+        participant.setTelephone(phone);
+        participant.setRole(role);
+        participant.setDomaine(domain);
+        participant.setStructure(structure);
+        // creating an instance of the participant service
+        ParticipantService participantService = new ParticipantServiceImplomentation();
+        // calling the add method
+        participantService.add(participant);
+        // redirecting to the participant page
+        response.sendRedirect("participantServlet");
     }
 }
