@@ -47,3 +47,4 @@ public class Responsable  extends User{
 
     public void setEtat(String etat) {Etat = etat;}
 }
+
