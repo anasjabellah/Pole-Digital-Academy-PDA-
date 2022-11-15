@@ -15,4 +15,8 @@ public class AdministrateurRepositoryImplimen implements AdministrateurRepositor
         // TODO Auto-generated method stub
         return adminDoa.add(admin);
     }
+    public Administrateur login(Administrateur admin) {
+        // TODO Auto-generated method stub
+        return adminDoa.login(admin);
+    }
 }

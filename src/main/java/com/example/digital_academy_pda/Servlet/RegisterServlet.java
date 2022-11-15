@@ -53,8 +53,8 @@ public class RegisterServlet extends HttpServlet {
 
                 // save the user
                 uService.add(admin);
-                // return to login page
-                request.getRequestDispatcher("login.jsp").forward(request, response);
+                // redirect to login page
+                response.sendRedirect("login.jsp");
             } else {
                 // if the password and confirm password is not the same
                 // return to register page

@@ -13,4 +13,7 @@ public class AdministrateurServiceImplomentation implements AdministrateurServic
     public Administrateur add(Administrateur admin) {
         return adminRepository.add(admin);
     }
+    public Administrateur login(Administrateur admin) {
+        return adminRepository.login(admin);
+    }
 }
