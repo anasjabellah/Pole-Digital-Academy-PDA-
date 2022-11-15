@@ -5,10 +5,10 @@ import java.util.List;
 
 @Entity
 @TableGenerator(name = "Role")
-
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Role {
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "role_id")
     private int id ;
     @Column(name = "name")
