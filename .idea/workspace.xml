@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2766f1f6-1fe2-453f-983e-3b8189c0106f" name="Changes" comment="" />
+    <list default="true" id="03c41c8b-53bd-409f-aa65-12479985c98a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/implementation/participantimp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/implementation/roleimp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/participantdao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/participantservlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/participant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Responsable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Responsable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -1,6 +1,9 @@
 package com.example.digital_academy_pda.services.Implimentation;
 
+import com.example.digital_academy_pda.DAO.implementation.ResponsableImplemeDAO;
 import com.example.digital_academy_pda.Entities.Responsable;
+import com.example.digital_academy_pda.Repository.Implimentation.ResponsableRepositoryImplimentation;
+import com.example.digital_academy_pda.Repository.ResponsableRepository;
 import com.example.digital_academy_pda.services.ResponsableService;
 
 import java.util.List;
@@ -8,15 +11,18 @@ import java.util.List;
 public class ResponsableServiceImplomentation implements ResponsableService
 {
 
+    private ResponsableRepository  responRepository = new ResponsableRepositoryImplimentation();
+    private ResponsableImplemeDAO responsableImplemeDAO = new ResponsableImplemeDAO();
+
 
     @Override
-    public void Add() {
-
+    public void Add(Responsable responsable) {
+        responRepository.add(responsable);
     }
 
     @Override
     public List<Responsable> listResponsable() {
-        return null;
+        return responsableImplemeDAO.listResponsable();
     }
 
     @Override
@@ -30,12 +36,15 @@ public class ResponsableServiceImplomentation implements ResponsableService
     }
 
     @Override
-    public void updateResponsable(long idResponsable) {
-
+    public void updateResponsable(Responsable responsable) {
+        responRepository.edit(responsable);
     }
 
     @Override
-    public void remmoveResponsable(long idResponsable) {
-
+    public void remmoveResponsable(int idResponsable) {
+        responRepository.delete(idResponsable);
     }
+
+    @Override
+    public  Responsable getResponsable(Long id){return responRepository.getResponsable(id);}
 }

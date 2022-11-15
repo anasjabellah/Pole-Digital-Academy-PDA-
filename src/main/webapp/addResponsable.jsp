@@ -13,11 +13,13 @@
     <title>ADD Responsable</title>
 </head>
 <body>
-    <h1>ADD Responsable</h1>
+
 
     <!--login form-->
     <div class="container mt-5 pt-5">
-        <form method="post">
+        <h1>ADD Responsable</h1>
+
+        <form method="post" action="AddResponsableServlet">
 
             <div class="mb-3">
                 <label class="form-label">Email address</label>
@@ -35,6 +37,11 @@
                 <input type="text" name="lastname" class="form-control" >
             </div>
 
+            <div class="mb-3">
+                <label  class="form-label">Domaine</label>
+                <input type="text" name="Domaine" class="form-control" >
+            </div>
+
 
             <div class="mb-3">
                 <label  class="form-label">phone</label>
@@ -42,17 +49,17 @@
             </div>
 
 
-            <select name="type" class="form-select" aria-label="Default select example">
+            <select name="type" class="form-select mb-3" aria-label="Default select example">
                 <option selected>Open this select menu</option>
                 <option value="formateur">formateur</option>
                 <option value="intervenant"> intervenant</option>
             </select>
 
 
-            <select name="Etat" class="form-select" aria-label="Default select example">
+            <select name="Etat" class="form-select mb-3" aria-label="Default select example">
                 <option selected>Open this select menu</option>
-                <option value="activé">activé</option>
-                <option value="désactivé">désactivé</option>
+                <option value="active">activé</option>
+                <option value="désactive">désactivé</option>
             </select>
 
 
