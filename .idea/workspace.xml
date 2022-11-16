@@ -10,10 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03c41c8b-53bd-409f-aa65-12479985c98a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Exercice.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addExercice.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/editExercice.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/ExerciceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/ExerciceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/Implimentation/ExerciceRepositoryImplimen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/Implimentation/ExerciceRepositoryImplimen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Activite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Activite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/AddParticipant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AddParticipant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Exercice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Exercice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addActivite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addActivite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addExercice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addExercice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addResponsable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResponsable.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editActivite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editActivite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editExercice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editExercice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editParticipant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editParticipant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editResponsable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editResponsable.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listParticipant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listParticipant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listResponsable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listResponsable.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/participant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/participant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
