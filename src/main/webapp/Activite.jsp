@@ -56,8 +56,8 @@
                                             <td><%= activite.getStatut() %></td>
                                             <td><%= activite.getResponsable().getPrenom() %></td>
                                             <td>
-                                                <a href="editActivite?id=<%= activite.getId() %>">edit</a>
-                                                <a href="delete-activity?id=<%= activite.getId() %>">delete</a>
+                                                <a class="btn btn-primary" href="editActivite?id=<%= activite.getId() %>">edit</a>
+                                                <a class="btn btn-danger" href="DeletActivite?id=<%= activite.getId() %>">delete</a>
                                             </td>
                                         </tr>
                                         <%

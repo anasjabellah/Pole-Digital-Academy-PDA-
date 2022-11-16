@@ -8,7 +8,7 @@ public interface ActiviteDao {
 
     public Activite Add(Activite activite);
 
-    public  void  edit(Activite activite);
+    public  void  update(Activite id);
 
 
     public  void  remove(long id);

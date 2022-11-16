@@ -16,13 +16,19 @@ public class ActiviteRepositoryImplimen implements ActiviteRepository {
     }
 
     @Override
-    public void edit(long id) {
-
+    public void update(Activite id) {
+        // create a new activite
+        ActiviteImpDao activiteImpDao = new ActiviteImpDao();
+        activiteImpDao.update(id);
+        return ;
     }
 
     @Override
     public void remove(long id) {
-
+        // create a new activite
+        ActiviteImpDao activiteImpDao = new ActiviteImpDao();
+        activiteImpDao.remove(id);
+        return ;
     }
 
     @Override

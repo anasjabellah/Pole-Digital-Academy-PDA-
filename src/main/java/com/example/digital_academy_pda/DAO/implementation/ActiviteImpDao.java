@@ -26,24 +26,23 @@ public class ActiviteImpDao implements ActiviteDao {
 
 
     @Override
-    public void edit(Activite activite) {
-
+    public void update(Activite id) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.merge(activite);
+        entityManager.merge(id);
         entityManager.getTransaction().commit();
         entityManager.close();
-
+        System.out.println("pakha");
     }
 
     @Override
     public void remove(long id) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
-        Responsable responsable = entityManager.find(Responsable.class, id);
-        entityManager.remove(responsable);
+        entityManager.getTransaction().begin();
+        Activite activite = entityManager.find(Activite.class, id);
+        entityManager.remove(activite);
         entityManager.getTransaction().commit();
         entityManager.close();
     }
