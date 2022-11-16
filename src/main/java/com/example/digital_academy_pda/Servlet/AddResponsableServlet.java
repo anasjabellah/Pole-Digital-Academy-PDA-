@@ -58,7 +58,7 @@ public class AddResponsableServlet extends HttpServlet {
                 if ( firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || phone.isEmpty() || Domaine.isEmpty() || type.isEmpty()  || Etat.isEmpty() ){
 
                     request.setAttribute("error", "Please fill all the fields");
-                    request.getRequestDispatcher("addResponsable.jsp").forward(request, response);
+                    request.getRequestDispatcher("addResponsable").forward(request, response);
 
                 }else {
 
