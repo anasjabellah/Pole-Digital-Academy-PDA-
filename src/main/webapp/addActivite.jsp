@@ -34,7 +34,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title"><p>You can edit this information and add exercises to this activity later</p></h5>
-                <form method="post" action="insert-activity" class="needs-validation" novalidate accept-charset="utf-8">
+                <form method="post"  class="needs-validation" novalidate accept-charset="utf-8">
                   <div class="row g-2">
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">Activity Title</label>
@@ -43,7 +43,7 @@
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">Choose a responsible for this activity</label>
                       <select  name="responsible" class="form-control">
-                          <option value="">select</option>
+                        <option value="" selected disabled>Select</option>
                         <%
                           // listing all the responsible
                             List<Responsable> responsables = (List<Responsable>) request.getAttribute("responsable");
@@ -63,24 +63,29 @@
                   <div class="row g-2">
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">start date</label>
-                      <input type="date" class="form-control" name="start-date" required>
+                      <input type="date" class="form-control" name="startdate" required>
                     </div>
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">end date</label>
-                      <input type="date" class="form-control" name="end-date" required>
+                      <input type="date" class="form-control" name="enddate" required>
                     </div>
                   </div>
                   <div class="row g-2">
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">Activity state</label>
-                      <select  name="activity-state" class="form-control">
-                          <option value=""></option>
+                      <select  name="activitystate" class="form-control">
+                          <option value="" selected disabled>Select</option>
+                          <option value="Active">Active</option>
+                          <option value="Inactive">Inactive</option>
                       </select>
                     </div>
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">Activity type</label>
-                      <select  name="activity-type" class="form-control">
-                          <option value=""></option>
+                      <select  name="activitytype" class="form-control">
+                            <option value="" selected disabled>Select</option>
+                            <option value="Online">Online</option>
+                            <option value="Outdoor">Outdoor</option>
+                            <option value="Indoor">Indoor</option>
                       </select>
                     </div>
                   </div>

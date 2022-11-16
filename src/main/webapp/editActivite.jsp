@@ -5,6 +5,8 @@
   Time: 09:51
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="com.example.digital_academy_pda.Entities.Activite" %>
+<%@ page import="com.example.digital_academy_pda.Entities.Responsable" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -32,7 +34,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title"><p>You can edit this information and add exercises to this activity later</p></h5>
-                <form method="post" action="insert-activity" class="needs-validation" novalidate accept-charset="utf-8">
+                <form method="post" action="" class="needs-validation" novalidate accept-charset="utf-8">
                   <div class="row g-2">
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">Activity Title</label>

@@ -15,7 +15,6 @@ public class ActiviteImpDao implements ActiviteDao {
 
     @Override
     public Activite Add(Activite activite) {
-
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
@@ -23,7 +22,6 @@ public class ActiviteImpDao implements ActiviteDao {
         entityManager.getTransaction().commit();
         entityManager.close();
         return activite;
-
     }
 
 

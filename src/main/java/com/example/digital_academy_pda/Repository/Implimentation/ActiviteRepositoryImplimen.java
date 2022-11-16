@@ -1,5 +1,5 @@
 package com.example.digital_academy_pda.Repository.Implimentation;
-
+import com.example.digital_academy_pda.DAO.implementation.ActiviteImpDao;
 import com.example.digital_academy_pda.Entities.Activite;
 import com.example.digital_academy_pda.Repository.ActiviteRepository;
 
@@ -9,7 +9,10 @@ public class ActiviteRepositoryImplimen implements ActiviteRepository {
 
     @Override
     public void Add(Activite activite) {
-
+        // create a new activite
+        ActiviteImpDao activiteImpDao = new ActiviteImpDao();
+        activiteImpDao.Add(activite);
+        return ;
     }
 
     @Override
@@ -24,7 +27,9 @@ public class ActiviteRepositoryImplimen implements ActiviteRepository {
 
     @Override
     public List<Activite> listActivite() {
-        return null;
+        // list all activite
+        ActiviteImpDao activiteImpDao = new ActiviteImpDao();
+        return activiteImpDao.listActivite();
     }
 
     @Override
