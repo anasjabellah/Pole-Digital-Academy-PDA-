@@ -12,8 +12,8 @@ public class Activite {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
 
-    @Column(name = "Titre")
-    private  String Titre ;
+    @Column(name = "Title")
+    private  String Title ;
     @Column(name = "Descriptif")
     private  String Descriptif ;
     @Column(name = "Type")
