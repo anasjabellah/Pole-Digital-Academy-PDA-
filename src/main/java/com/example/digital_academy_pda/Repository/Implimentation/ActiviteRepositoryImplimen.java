@@ -34,6 +34,8 @@ public class ActiviteRepositoryImplimen implements ActiviteRepository {
 
     @Override
     public Activite getActivite(long id) {
-        return null;
+        // get a activite by id
+        ActiviteImpDao activiteImpDao = new ActiviteImpDao();
+        return activiteImpDao.getActivite(id);
     }
 }

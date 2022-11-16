@@ -60,23 +60,13 @@ public class ActiviteImpDao implements ActiviteDao {
 
     @Override
     public Activite getActivite(long id) {
-
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
-        Activite activite = new Activite();
-
-        try {
-            Query query =  entityManager.createQuery("select a from Activite a where a.id = id");
-            activite = (Activite) query.getSingleResult();
-            entityManager.getTransaction().commit();
-        } catch (Exception ex) {
-
-            entityManager.getTransaction().rollback();
-
-            ex.printStackTrace();
-        }
-
+        Activite activite = entityManager.find(Activite.class, id);
+        entityManager.getTransaction().commit();
+        entityManager.close();
+        System.out.println("activite");
         return activite;
     }
 

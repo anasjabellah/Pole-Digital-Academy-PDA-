@@ -35,5 +35,10 @@ public class ActiviteServiceImplomentation implements ActiviteService {
     }
 
     @Override
-    public Activite getActivite(long id) { return  null ;}
+    public Activite getActivite(long id) {
+        // creatin a new object from ActiviteRepositoryImplimen
+        ActiviteRepositoryImplimen activiteRepository = new ActiviteRepositoryImplimen();
+        // calling the method getActivite from ActiviteRepositoryImplimen
+        return activiteRepository.getActivite(id);
+    }
 }

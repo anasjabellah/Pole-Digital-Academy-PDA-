@@ -5,6 +5,8 @@
   Time: 09:57
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="com.example.digital_academy_pda.Entities.Activite" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -40,19 +42,27 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                        <%
+                                            // gettting the list of activities from the servlet
+                                            List<Activite> activites = (List<Activite>) request.getAttribute("activite");
+                                            for (Activite activite : activites) {
+                                        %>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><%= activite.getTitre() %></td>
+                                            <td><%= activite.getDescriptif() %></td>
+                                            <td><%= activite.getDateDebut() %></td>
+                                            <td><%= activite.getDateDeFin() %></td>
+                                            <td><%= activite.getType() %></td>
+                                            <td><%= activite.getStatut() %></td>
+                                            <td><%= activite.getResponsable().getPrenom() %></td>
                                             <td>
-                                                <a class="link-danger" href="" />">Delete</a>
-                                                <a class="link-warning" href="" />Edit</a>
+                                                <a href="editActivite?id=<%= activite.getId() %>">edit</a>
+                                                <a href="delete-activity?id=<%= activite.getId() %>">delete</a>
                                             </td>
                                         </tr>
+                                        <%
+                                            }
+                                        %>
                                     </tbody>
                                 </table>
                             </div>

@@ -21,14 +21,14 @@ public class Activite {
     @Column(name = "statut")
     private  String statut ;
     @Column(name = "DateDebut")
-    private  Date DateDebut ;
+    private  String DateDebut;
     @Column(name = "DateDeFin")
-    private  Date DateDeFin ;
+    private  String DateDeFin ;
     @ManyToOne
     private  Responsable responsable ;
 
 
-    public Activite(Long id, String Title, String descriptif, String type, String statut, Date dateDebut, Date dateDeFin, Responsable responsable) {
+    public Activite(Long id, String Title, String descriptif, String type, String statut, String dateDebut, String dateDeFin, Responsable responsable) {
         this.id = id;
         this.Title = Title;
         this.Descriptif = descriptif;
@@ -75,19 +75,19 @@ public class Activite {
         this.statut = statut;
     }
 
-    public Date getDateDebut() {
+    public String getDateDebut() {
         return DateDebut;
     }
 
-    public void setDateDebut(Date dateDebut) {
+    public void setDateDebut(String dateDebut) {
         this.DateDebut = dateDebut;
     }
 
-    public Date getDateDeFin() {
+    public String getDateDeFin() {
         return DateDeFin;
     }
 
-    public void setDateDeFin(Date dateDeFin) {
+    public void setDateDeFin(String dateDeFin) {
         this.DateDeFin = dateDeFin;
     }
 
