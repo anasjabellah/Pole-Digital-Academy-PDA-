@@ -31,7 +31,7 @@ public class ActiviteServlet extends HttpServlet {
 
                 List<Responsable> responsables = RespoService.listResponsable();
                 request.setAttribute("responsable",responsables);
-                request.getRequestDispatcher("/AddActivite.jsp").forward(request, response);
+                request.getRequestDispatcher("/addActivite.jsp").forward(request, response);
                 break;
 
             case "/editActivite":

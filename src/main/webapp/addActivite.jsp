@@ -1,3 +1,5 @@
+<%@ page import="java.util.List" %>
+<%@ page import="com.example.digital_academy_pda.Entities.Responsable" %>
 <%--
   Created by IntelliJ IDEA.
   User: Youcode
@@ -41,7 +43,16 @@
                     <div class="mb-3 col-md-6">
                       <label  class="form-label">Choose a responsible for this activity</label>
                       <select  name="responsible" class="form-control">
-                          <option value=""></option>
+                          <option value="">select</option>
+                        <%
+                          // listing all the responsible
+                            List<Responsable> responsables = (List<Responsable>) request.getAttribute("responsable");
+                            for (Responsable responsable : responsables) {
+                        %>
+                        <option value="<%= responsable.getId() %>"><%= responsable.getPrenom() %></option>
+                        <%
+                            }
+                        %>
                       </select>
                     </div>
                   </div>
