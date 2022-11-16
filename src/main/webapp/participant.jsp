@@ -5,6 +5,7 @@
   <title>Login</title>
 </head>
 <body>
+
 <header>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -15,14 +16,16 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-          </button>
+          <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listResponsable">Responsable</a>
+          <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listParticipant">Participant</a>
+          <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listActivite">Activite</a>
+          <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listExercice">Exercice</a>
         </div>
       </div>
     </div>
   </nav>
 </header>
+
 <!--login form-->
 <div class="container mt-5 pt-5">
   <table class="table">

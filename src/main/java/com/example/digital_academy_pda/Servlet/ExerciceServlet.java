@@ -40,11 +40,12 @@ public class ExerciceServlet extends HttpServlet {
                 break;
             case "/DeletExercice":
                 break;
+
             case "/listExercice":
 
                 List<Exercice> exercices = EXservices.listExercice();
                 request.setAttribute("responsable",exercices);
-                request.getRequestDispatcher("/listExercice.jsp").forward(request, response);
+                request.getRequestDispatcher("/Exercice.jsp").forward(request, response);
                 break;
         }
 
