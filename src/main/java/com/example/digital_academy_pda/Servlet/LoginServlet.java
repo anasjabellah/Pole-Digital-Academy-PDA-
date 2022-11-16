@@ -38,7 +38,31 @@ public class LoginServlet extends HttpServlet {
             admin.setPassword(password);
             // create an instance of the userservice class
             AdministrateurService uService = new AdministrateurServiceImplomentation();
-            //
+            // call the login method
+            Administrateur isLogin = uService.login(admin);
+            // if is empty
+            if (isLogin == null) {
+                // return to login page
+                System.out.println("Login failed");
+                request.getRequestDispatcher("login").forward(request, response);
+            } else {
+                // chechcking the user password is equal to the password in the database
+                if (isLogin.getPassword().equals(password)) {
+                    // if the password is correct
+                    // create a session
+                    HttpSession session = request.getSession();
+                    // set the user in the session
+                    session.setAttribute("user", isLogin);
+                    // redirect to the home page
+                    response.sendRedirect("home");
+                    System.out.println("login success");
+                } else {
+                    // if the password is incorrect
+                    // return to login page
+                    System.out.println("Login failed password");
+                    request.getRequestDispatcher("login.jsp").forward(request, response);
+                }
+            }
         }
     }
 }
