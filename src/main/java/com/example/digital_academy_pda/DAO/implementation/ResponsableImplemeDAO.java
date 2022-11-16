@@ -46,7 +46,8 @@ public class ResponsableImplemeDAO implements ResponsableDAO {
         entityManager.getTransaction().begin();
         Responsable responsable = new Responsable();
         try {
-            Query query =  entityManager.createQuery("select r from Responsable r where r.id = id");
+            System.out.println("id passed to responsibel dao is "+id);
+            Query query =  entityManager.createQuery("select r from Responsable r where r.id ="+id);
             responsable = (Responsable) query.getSingleResult();
             entityManager.getTransaction().commit();
         } catch (Exception ex) {

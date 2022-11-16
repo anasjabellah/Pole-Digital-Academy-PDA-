@@ -25,7 +25,7 @@ public class AddResponsableServlet extends HttpServlet {
                 break;
             case "/editResponsable" :
 
-                request.setAttribute("responsablee" , RespoService.getResponsable((Long) request.getAttribute("id")) );
+                request.setAttribute("responsablee" , RespoService.getResponsable(Long.parseLong(request.getParameter("id")) ));
                 request.getRequestDispatcher("/editResponsable.jsp").forward(request, response);
                 break;
             case  "/listResponsable" :
