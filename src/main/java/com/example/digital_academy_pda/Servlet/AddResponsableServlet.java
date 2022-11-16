@@ -24,16 +24,15 @@ public class AddResponsableServlet extends HttpServlet {
                 request.getRequestDispatcher("/addResponsable.jsp").forward(request, response);
                 break;
             case "/editResponsable" :
+
                 request.setAttribute("responsablee" , RespoService.getResponsable((Long) request.getAttribute("id")) );
                 request.getRequestDispatcher("/editResponsable.jsp").forward(request, response);
-
                 break;
             case  "/listResponsable" :
 
                 List<Responsable> responsables = RespoService.listResponsable();
                 request.setAttribute("responsable",responsables);
                 request.getRequestDispatcher("/listResponsable.jsp").forward(request, response);
-
                 break;
         }
     }

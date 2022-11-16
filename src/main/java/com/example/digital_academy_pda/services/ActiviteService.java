@@ -14,4 +14,6 @@ public interface ActiviteService {
     public  void  remove(long id);
 
     public List<Activite> listActivite();
+
+    Activite getActivite(long id);
 }

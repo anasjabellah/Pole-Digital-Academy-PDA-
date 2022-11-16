@@ -14,4 +14,6 @@ public interface ActiviteRepository {
 
     public List<Activite> listActivite();
 
+    public  Activite getActivite(long id);
+
 }

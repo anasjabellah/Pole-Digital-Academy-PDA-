@@ -26,4 +26,9 @@ public class ActiviteRepositoryImplimen implements ActiviteRepository {
     public List<Activite> listActivite() {
         return null;
     }
+
+    @Override
+    public Activite getActivite(long id) {
+        return null;
+    }
 }

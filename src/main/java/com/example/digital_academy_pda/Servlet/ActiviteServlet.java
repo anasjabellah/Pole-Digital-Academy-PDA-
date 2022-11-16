@@ -1,5 +1,6 @@
 package com.example.digital_academy_pda.Servlet;
 
+import com.example.digital_academy_pda.Entities.Activite;
 import com.example.digital_academy_pda.Entities.Responsable;
 import com.example.digital_academy_pda.services.ActiviteService;
 import com.example.digital_academy_pda.services.Implimentation.ActiviteServiceImplomentation;
@@ -34,10 +35,18 @@ public class ActiviteServlet extends HttpServlet {
                 break;
 
             case "/editActivite":
+
+                request.setAttribute("activite" , ActivService.getActivite((Long) request.getAttribute("id")) );
+                request.getRequestDispatcher("/editActivite.jsp").forward(request, response);
                 break;
+
             case "/DeletActivite":
                 break;
             case "/listActivite":
+
+                List<Activite> activites = ActivService.listActivite();
+                request.setAttribute("responsable",activites);
+                request.getRequestDispatcher("/listActivite.jsp").forward(request, response);
                 break;
         }
     }

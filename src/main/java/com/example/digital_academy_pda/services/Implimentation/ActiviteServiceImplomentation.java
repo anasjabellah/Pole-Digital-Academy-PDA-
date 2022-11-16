@@ -26,4 +26,7 @@ public class ActiviteServiceImplomentation implements ActiviteService {
     public List<Activite> listActivite() {
         return null;
     }
+
+    @Override
+    public Activite getActivite(long id) { return  null ;}
 }
