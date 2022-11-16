@@ -9,7 +9,7 @@ public interface ActiviteService {
 
     public void  Add(Activite activite);
 
-    public  void  edit(long id);
+    public  void  update(Activite id);
 
     public  void  remove(long id);
 

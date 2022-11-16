@@ -49,6 +49,11 @@ public class ActiviteServlet extends HttpServlet {
                 break;
 
             case "/DeletActivite":
+                // get the id of the activite
+                long idd = Long.parseLong(request.getParameter("id"));
+                // delete the activite by id
+                ActivService.remove(idd);
+                response.sendRedirect("/Pole_Digital_Academy_PDA_war_exploded/listActivite");
                 break;
             case "/listActivite":
                 List<Activite> activites = ActivService.listActivite();
@@ -83,18 +88,22 @@ public class ActiviteServlet extends HttpServlet {
                 response.sendRedirect("/Pole_Digital_Academy_PDA_war_exploded/listActivite");
                 break;
             case "/editActivite":
-                // gett all parametres and create new Activite
+                // Update the activite
                 Activite activite1 = new Activite();
                 activite1.setId(Long.parseLong(request.getParameter("id")));
                 activite1.setTitre(request.getParameter("title"));
                 activite1.setDescriptif(request.getParameter("description"));
                 activite1.setType(request.getParameter("type"));
                 activite1.setStatut(request.getParameter("statut"));
-
-                break;
-            case "/DeletActivite":
-                break;
-            case "/listActivite":
+                // getting date from form and convert it to date
+                activite1.setDateDebut(request.getParameter("startdate"));
+                activite1.setDateDeFin(request.getParameter("enddate"));
+                activite1.setStatut(request.getParameter("activitystate"));
+                activite1.setType(request.getParameter("activitytype"));
+                activite1.setResponsable(RespoService.getResponsable(Long.parseLong(request.getParameter("responsible"))));
+                ActiviteServiceImplomentation activiteService = new ActiviteServiceImplomentation();
+                activiteService.update(activite1);
+                response.sendRedirect("/Pole_Digital_Academy_PDA_war_exploded/listActivite");
                 break;
         }
     }

@@ -17,13 +17,21 @@ public class ActiviteServiceImplomentation implements ActiviteService {
     }
 
     @Override
-    public void edit(long id) {
-
+    public void update(Activite id) {
+        // creatin a new object from ActiviteRepositoryImplimen
+        ActiviteRepositoryImplimen activiteRepository = new ActiviteRepositoryImplimen();
+        // calling the method update from ActiviteRepositoryImplimen
+        activiteRepository.update(id);
+        return;
     }
 
     @Override
     public void remove(long id) {
-
+        // creatin a new object from ActiviteRepositoryImplimen
+        ActiviteRepositoryImplimen activiteRepository = new ActiviteRepositoryImplimen();
+        // calling the method remove from ActiviteRepositoryImplimen
+        activiteRepository.remove(id);
+        return;
     }
 
     @Override

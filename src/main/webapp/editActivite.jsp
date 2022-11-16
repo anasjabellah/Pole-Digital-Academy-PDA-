@@ -55,7 +55,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title"><p>You can edit this information and add exercises to this activity later</p></h5>
-                <form method="post"  class="needs-validation" novalidate accept-charset="utf-8">
+                <form method="post"  class="needs-validation">
                   <%
                     // get the activity from the request
                     Activite activite = (Activite) request.getAttribute("activite");
@@ -82,6 +82,7 @@
                     </div>
                   </div>
                   <div class="mb-3">
+                    <input hidden name="id" value="<%= activite.getId()%>">
                     <label  class="form-label">Description</label>
                     <input value="<%= activite.getDescriptif() %>" name="description" class="form-control" rows="4" cols="50"></input>
                   </div>
