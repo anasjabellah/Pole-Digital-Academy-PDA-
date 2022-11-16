@@ -31,22 +31,29 @@ public class ActiviteServlet extends HttpServlet {
 
                 List<Responsable> responsables = RespoService.listResponsable();
                 request.setAttribute("responsable",responsables);
-                request.getRequestDispatcher("/AddActivite.jsp").forward(request, response);
+                request.getRequestDispatcher("/addActivite.jsp").forward(request, response);
                 break;
 
             case "/editActivite":
-
-                request.setAttribute("activite" , ActivService.getActivite((Long) request.getAttribute("id")) );
+                // get the id of the activite
+                long id = Long.parseLong(request.getParameter("id"));
+                // get the activite by id
+                Activite activite = ActivService.getActivite(id);
+                // get the list of responsable
+                List<Responsable> responsableList = RespoService.listResponsable();
+                // set the activite and the list of responsable to the request
+                request.setAttribute("activite",activite);
+                request.setAttribute("responsable",responsableList);
+                // forward the request to the editActivite.jsp
                 request.getRequestDispatcher("/editActivite.jsp").forward(request, response);
                 break;
 
             case "/DeletActivite":
                 break;
             case "/listActivite":
-
                 List<Activite> activites = ActivService.listActivite();
-                request.setAttribute("responsable",activites);
-                request.getRequestDispatcher("/listActivite.jsp").forward(request, response);
+                request.setAttribute("activite",activites);
+                request.getRequestDispatcher("/Activite.jsp").forward(request, response);
                 break;
         }
     }
@@ -58,8 +65,32 @@ public class ActiviteServlet extends HttpServlet {
 
         switch (urlPage){
             case "/AddActivite":
+                // gett all parametres and create new Activite
+                Activite activite = new Activite();
+                activite.setTitre(request.getParameter("title"));
+                activite.setDescriptif(request.getParameter("description"));
+                activite.setType(request.getParameter("type"));
+                activite.setStatut(request.getParameter("statut"));
+                // getting date from form and convert it to date
+                activite.setDateDebut(request.getParameter("startdate"));
+                activite.setDateDeFin(request.getParameter("enddate"));
+                activite.setStatut(request.getParameter("activitystate"));
+                activite.setType(request.getParameter("activitytype"));
+                activite.setResponsable(RespoService.getResponsable(Long.parseLong(request.getParameter("responsible"))));
+                System.out.println("a o k");
+                ActivService.Add(activite);
+                System.out.println("a o k");
+                response.sendRedirect("/Pole_Digital_Academy_PDA_war_exploded/listActivite");
                 break;
             case "/editActivite":
+                // gett all parametres and create new Activite
+                Activite activite1 = new Activite();
+                activite1.setId(Long.parseLong(request.getParameter("id")));
+                activite1.setTitre(request.getParameter("title"));
+                activite1.setDescriptif(request.getParameter("description"));
+                activite1.setType(request.getParameter("type"));
+                activite1.setStatut(request.getParameter("statut"));
+
                 break;
             case "/DeletActivite":
                 break;
