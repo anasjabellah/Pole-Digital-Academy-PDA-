@@ -20,10 +20,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link active" aria-current="page" href="#">Responsable</a>
-                        <a class="nav-link active" aria-current="page" href="#">Participant</a>
-                        <a class="nav-link active" aria-current="page" href="#">Activite</a>
-                        <a class="nav-link active" aria-current="page" href="#">Exercice</a>
+                        <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listResponsable">Responsable</a>
+                        <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/Participant">Participant</a>
+                        <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listActivite">Activite</a>
+                        <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listExercice">Exercice</a>
                     </div>
                 </div>
             </div>
