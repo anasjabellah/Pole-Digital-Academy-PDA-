@@ -10,13 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03c41c8b-53bd-409f-aa65-12479985c98a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/ExerciceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/implementation/ExerciceDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/ExerciceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/Implimentation/ExerciceRepositoryImplimen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/ExerciceServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/ExerciceServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/Implimentation/ExerciceServicesImploment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/ActiviteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/ActiviteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/Implimentation/ActiviteRepositoryImplimen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Repository/Implimentation/ActiviteRepositoryImplimen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/ActiviteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/ActiviteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/AddResponsableServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/AddResponsableServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/ActiviteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/ActiviteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/Implimentation/ActiviteServiceImplomentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/Implimentation/ActiviteServiceImplomentation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
