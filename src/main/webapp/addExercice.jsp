@@ -20,7 +20,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listResponsable">Responsable</a>
-                        <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/Participant">Participant</a>
+                        <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listParticipant">Participant</a>
                         <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listActivite">Activite</a>
                         <a class="nav-link active" aria-current="page" href="/Pole_Digital_Academy_PDA_war_exploded/listExercice">Exercice</a>
                     </div>
