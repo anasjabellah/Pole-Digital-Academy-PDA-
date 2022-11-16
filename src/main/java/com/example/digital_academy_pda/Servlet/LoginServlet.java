@@ -54,13 +54,13 @@ public class LoginServlet extends HttpServlet {
                     // set the user in the session
                     session.setAttribute("user", isLogin);
                     // redirect to the home page
-                    response.sendRedirect("home");
+                    response.sendRedirect("listParticipant");
                     System.out.println("login success else");
                 } else {
                     // if the password is incorrect
                     // return to login page
                     System.out.println("Login failed password");
-                    request.getRequestDispatcher("login.jsp").forward(request, response);
+                    response.sendRedirect("login");
                 }
             }
         }
