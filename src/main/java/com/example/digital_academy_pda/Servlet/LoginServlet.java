@@ -44,7 +44,7 @@ public class LoginServlet extends HttpServlet {
             if (isLogin == null) {
                 // return to login page
                 System.out.println("Login failed");
-                request.getRequestDispatcher("login").forward(request, response);
+                response.sendRedirect("login");
             } else {
                 // chechcking the user password is equal to the password in the database
                 if (isLogin.getPassword().equals(password)) {
@@ -55,7 +55,7 @@ public class LoginServlet extends HttpServlet {
                     session.setAttribute("user", isLogin);
                     // redirect to the home page
                     response.sendRedirect("home");
-                    System.out.println("login success");
+                    System.out.println("login success else");
                 } else {
                     // if the password is incorrect
                     // return to login page

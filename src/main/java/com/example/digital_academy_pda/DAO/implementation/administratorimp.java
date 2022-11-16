@@ -27,12 +27,17 @@ public class administratorimp implements administrateurDao {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
-        Administrateur admin1 = entityManager.createQuery("SELECT a FROM Administrateur a WHERE a.email = :email", Administrateur.class)
-                .setParameter("email", admin.getEmail())
-                .getSingleResult();
-        entityManager.getTransaction().commit();
-        entityManager.close();
-        return admin1;
+        try {
+            Administrateur admin1 = entityManager.createQuery("SELECT a FROM Administrateur a WHERE a.email = :email", Administrateur.class)
+                    .setParameter("email", admin.getEmail())
+                    .getSingleResult();
+            entityManager.getTransaction().commit();
+            entityManager.close();
+            return admin1;
+        } catch (Exception e) {
+            admin = null;
+            return admin;
+        }
     }
     public Administrateur findAdminByemail(String email) {
         // Search for admin in database using entity manager and returning all his data
