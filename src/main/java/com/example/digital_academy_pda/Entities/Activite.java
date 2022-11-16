@@ -28,9 +28,9 @@ public class Activite {
     private  Responsable responsable ;
 
 
-    public Activite(Long id, String titre, String descriptif, String type, String statut, Date dateDebut, Date dateDeFin, Responsable responsable) {
+    public Activite(Long id, String Title, String descriptif, String type, String statut, Date dateDebut, Date dateDeFin, Responsable responsable) {
         this.id = id;
-        this.Titre = titre;
+        this.Title = Title;
         this.Descriptif = descriptif;
         this.Type = type;
         this.statut = statut;
@@ -44,11 +44,11 @@ public class Activite {
     }
 
     public String getTitre() {
-        return Titre;
+        return Title;
     }
 
     public void setTitre(String titre) {
-        this.Titre = titre;
+        this.Title = titre;
     }
 
     public String getDescriptif() {
