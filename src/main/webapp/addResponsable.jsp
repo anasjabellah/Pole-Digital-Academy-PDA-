@@ -38,7 +38,7 @@
     <div class="container mt-5 pt-5">
         <h1>ADD Responsable</h1>
 
-        <form method="post" action="AddResponsableServlet">
+        <form method="post" action="/Pole_Digital_Academy_PDA_war_exploded/listResponsable">
 
             <div class="mb-3">
                 <label class="form-label">Email address</label>

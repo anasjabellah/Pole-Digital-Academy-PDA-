@@ -1,4 +1,5 @@
-
+<%@ page import="com.example.digital_academy_pda.Entities.Activite" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -40,7 +41,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><p>You can edit this information later</p></h5>
-                                <form method="post" action="insert-exercise" class="needs-validation" novalidate accept-charset="utf-8">
+                                <form method="post" action="/Pole_Digital_Academy_PDA_war_exploded/AddExercice" class="needs-validation" novalidate accept-charset="utf-8">
                                     <div class="row g-2">
                                         <div class="mb-3 col-md-6">
                                             <label  class="form-label">Exercise Title</label>
@@ -64,8 +65,16 @@
                                     <div class="row g-2">
                                         <div class="mb-3 col-md-6">
                                             <label  class="form-label">Activity state</label>
-                                            <select  name="exercise-status" class="form-control">
-                                                    <option value=""></option>
+                                            <select  name="Activity-status" class="form-control">
+                                                <%
+                                                    List<Activite> activites = (List<Activite>) request.getAttribute("activite");
+                                                    for (Activite activite : activites) {
+                                                %>
+                                                <option value="<%= activite.getId() %>"><%= activite.getTitre() %></option>
+                                                <%
+                                                    }
+                                                %>
+
                                             </select>
                                         </div>
                                         <div class="mb-3 col-md-6">

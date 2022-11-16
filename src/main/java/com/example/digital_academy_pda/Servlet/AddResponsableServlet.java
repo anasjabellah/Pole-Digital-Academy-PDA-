@@ -102,7 +102,6 @@ public class AddResponsableServlet extends HttpServlet {
                     responsable.setType(Type);
                     responsable.setEtat(etat);
                     RespoService.updateResponsable(responsable);
-
                   response.sendRedirect("/Pole_Digital_Academy_PDA_war_exploded/listResponsable");
 
                 }

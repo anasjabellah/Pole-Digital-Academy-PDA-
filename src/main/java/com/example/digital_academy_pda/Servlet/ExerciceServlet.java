@@ -3,7 +3,9 @@ package com.example.digital_academy_pda.Servlet;
 import com.example.digital_academy_pda.Entities.Activite;
 import com.example.digital_academy_pda.Entities.Exercice;
 import com.example.digital_academy_pda.Entities.Responsable;
+import com.example.digital_academy_pda.services.ActiviteService;
 import com.example.digital_academy_pda.services.ExerciceServices;
+import com.example.digital_academy_pda.services.Implimentation.ActiviteServiceImplomentation;
 import com.example.digital_academy_pda.services.Implimentation.ExerciceServicesImploment;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -17,6 +19,8 @@ import java.util.List;
 public class ExerciceServlet extends HttpServlet {
 
     ExerciceServices EXservices = new ExerciceServicesImploment();
+    ActiviteService ActivService = new ActiviteServiceImplomentation();
+
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,9 +31,9 @@ public class ExerciceServlet extends HttpServlet {
         switch (urlPage){
             case "/AddExercice":
 
-                List<Exercice> exercice = EXservices.listExercice();
-                request.setAttribute("exercice",exercice);
-                request.getRequestDispatcher("/AddExercice.jsp").forward(request, response);
+                List<Activite> activites = ActivService.listActivite();
+                request.setAttribute("activite", activites);
+                request.getRequestDispatcher("/addExercice.jsp").forward(request, response);
 
                 break;
             case "/editExercice":
@@ -59,6 +63,16 @@ public class ExerciceServlet extends HttpServlet {
 
         switch (urlPage){
             case "/AddExercice":
+
+                Exercice exercice = new Exercice();
+                exercice.setTitle(request.getParameter("title"));
+                exercice.setAnnee(request.getParameter("year"));
+                exercice.setDateDebut(request.getParameter("start-date"));
+                exercice.setDateDeFin(request.getParameter("end-date"));
+                exercice.setActivite(ActivService.getActivite(Long.parseLong(request.getParameter("Activity-status"))));
+                EXservices.Add(exercice);
+                response.sendRedirect("/Pole_Digital_Academy_PDA_war_exploded/listExercice");
+
                 break;
             case "/editExercice":
                 break;

@@ -19,7 +19,6 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Login</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +44,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between"><p>to view more info about an activity, click edit button</p> <a class="link-primary" href="create-activity">add activity</a></div>
+                            <div class="card-header d-flex justify-content-between"><p>to view more info about an activity, click edit button</p> <a class="link-primary" href="/Pole_Digital_Academy_PDA_war_exploded/AddActivite">add activity</a></div>
                             <div class="card-body">
                                 <p class="card-title"></p>
                                 <table class="table table-hover" id="dataTables-example" width="100%">
