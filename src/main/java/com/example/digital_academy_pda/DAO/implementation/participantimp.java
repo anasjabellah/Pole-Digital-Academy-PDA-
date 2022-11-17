@@ -14,6 +14,7 @@ public class participantimp implements participantdao {
     @Override
     public boolean addParticipant(Participant participant) {
         // add participant to database using entity manager
+    try {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
@@ -21,6 +22,10 @@ public class participantimp implements participantdao {
         entityManager.getTransaction().commit();
         entityManager.close();
         return true;
+    }catch (Exception e){
+        e.printStackTrace();
+        return false;
+    }
     }
     @Override
     public void editParticipant(Participant participant) {

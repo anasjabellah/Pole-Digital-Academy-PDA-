@@ -9,8 +9,11 @@ public class ParticipantRepositoryimpl implements ParticipantRepository {
     participantdao participantDao = new participantimp();
     @Override
     public boolean add(Participant participant) {
-        // TODO Auto-generated method stub
-        return true;
+        if (participantDao.addParticipant(participant)){
+            return true;
+        }else {
+            return false;
+        }
     }
     @Override
     public void edit(Participant participant) {

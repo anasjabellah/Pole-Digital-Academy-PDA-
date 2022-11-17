@@ -13,7 +13,12 @@ public class ParticipantServiceImplomentation implements ParticipantService {
     participantimp participantImplemeDAO = new participantimp();
     @Override
     public boolean add(Participant participant) {
-        return true;
+        //
+        if (participantRepository.add(participant)){
+            return true;
+        }else {
+            return false;
+        }
     }
     @Override
     public List<Participant> listParticipant() {
