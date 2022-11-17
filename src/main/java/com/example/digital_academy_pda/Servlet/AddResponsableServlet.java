@@ -34,6 +34,10 @@ public class AddResponsableServlet extends HttpServlet {
                 request.setAttribute("responsable",responsables);
                 request.getRequestDispatcher("/listResponsable.jsp").forward(request, response);
                 break;
+            case  "/DeletResponsable" :
+                RespoService.remmoveResponsable(Integer.parseInt(request.getParameter("id")));
+                response.sendRedirect(request.getContextPath()+"/listResponsable");
+                break;
         }
     }
 
@@ -108,9 +112,7 @@ public class AddResponsableServlet extends HttpServlet {
                 }
 
                 break;
-            case  "/DeletResponsable" :
 
-                break;
         }
 
 

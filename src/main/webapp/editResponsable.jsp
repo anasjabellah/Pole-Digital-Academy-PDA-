@@ -42,10 +42,7 @@
 
         <% Responsable responsable = (Responsable) request.getAttribute("responsablee"); %>
 
-        <div class="mb-3">
-            <label class="form-label">id</label>
-            <input type="number" name="id" class="form-control" value="<%= responsable.getId() %>" >
-        </div>
+            <input type="hidden"  name="id" class="form-control" value="<%= responsable.getId() %>" >
 
 
         <div class="mb-3">

@@ -10,10 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03c41c8b-53bd-409f-aa65-12479985c98a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/digital_academy_pda/services/Implimentation/ActiviteServiceImplomentationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/implementation/ResponsableImplemeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/DAO/implementation/ResponsableImplemeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/AddResponsableServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/AddResponsableServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/ExerciceServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/ExerciceServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editResponsable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editResponsable.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +27,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -59,19 +63,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Youcode/IdeaProjects/Digital Academy PDA - Copie&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/Youcode/IdeaProjects/Digital Academy PDA - Copie",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.digital_academy_pda.services.Implimentation" />
@@ -83,9 +89,16 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chaib\Documents\GitHub\Pole-Digital-Academy-PDA-\src\main\webapp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.digital_academy_pda.Repository.Implimentation" />
       <recent name="com.example.digital_academy_pda.services" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.digital_academy_pda.services.Implimentation" />
+      <recent name="services" />
     </key>
   </component>
   <component name="RunManager">

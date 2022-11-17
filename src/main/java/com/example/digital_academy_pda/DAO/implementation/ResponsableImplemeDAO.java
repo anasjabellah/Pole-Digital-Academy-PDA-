@@ -63,6 +63,7 @@ public class ResponsableImplemeDAO implements ResponsableDAO {
     public void delete(int Id) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
+        entityManager.getTransaction().begin();
         Responsable responsable = entityManager.find(Responsable.class, Id);
         entityManager.remove(responsable);
         entityManager.getTransaction().commit();

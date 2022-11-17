@@ -54,8 +54,7 @@ public class LoginServlet extends HttpServlet {
                     // set the user in the session
                     session.setAttribute("user", isLogin);
                     // redirect to the home page
-                    response.sendRedirect("listParticipant");
-                    System.out.println("login success else");
+                    response.sendRedirect("/Pole_Digital_Academy_PDA_war_exploded/listResponsable");
                 } else {
                     // if the password is incorrect
                     // return to login page
