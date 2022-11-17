@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03c41c8b-53bd-409f-aa65-12479985c98a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Exercice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Entities/Exercice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/AddResponsableServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/AddResponsableServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/ExerciceServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/Servlet/ExerciceServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/ExerciceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/Implimentation/ExerciceServiceImplomentation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/Implimentation/ExerciceServicesImploment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/Implimentation/ExerciceServicesImploment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Activite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Activite.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addExercice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addExercice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addResponsable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResponsable.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="03c41c8b-53bd-409f-aa65-12479985c98a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +21,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -65,19 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Youcode/IdeaProjects/Digital Academy PDA - Copie&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/Youcode/IdeaProjects/Digital Academy PDA - Copie",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.digital_academy_pda.services.Implimentation" />
@@ -89,12 +82,34 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chaib\Documents\GitHub\Pole-Digital-Academy-PDA-\src\main\webapp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.digital_academy_pda.Repository.Implimentation" />
       <recent name="com.example.digital_academy_pda.services" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.digital_academy_pda.services.Implimentation" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ParticipantServiceImplomentationTest.add">
+    <configuration name="ParticipantServiceImplomentationTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pole-Digital-Academy-PDA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.digital_academy_pda.services.Implimentation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.digital_academy_pda.services.Implimentation" />
+      <option name="MAIN_CLASS_NAME" value="com.example.digital_academy_pda.services.Implimentation.ParticipantServiceImplomentationTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -182,6 +197,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ParticipantServiceImplomentationTest.add" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -203,6 +223,7 @@
       <workItem from="1668499805246" duration="6171000" />
       <workItem from="1668506533857" duration="15365000" />
       <workItem from="1668584300910" duration="14162000" />
+      <workItem from="1668680684596" duration="937000" />
     </task>
     <servers />
   </component>

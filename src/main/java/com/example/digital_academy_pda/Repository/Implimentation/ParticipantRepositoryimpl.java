@@ -8,9 +8,9 @@ import com.example.digital_academy_pda.Repository.ParticipantRepository;
 public class ParticipantRepositoryimpl implements ParticipantRepository {
     participantdao participantDao = new participantimp();
     @Override
-    public Participant add(Participant participant) {
+    public boolean add(Participant participant) {
         // TODO Auto-generated method stub
-        return participantDao.addParticipant(participant);
+        return true;
     }
     @Override
     public void edit(Participant participant) {

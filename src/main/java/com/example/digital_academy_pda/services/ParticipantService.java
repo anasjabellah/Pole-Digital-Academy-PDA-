@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface ParticipantService {
     // method to add a participant
-    Participant add(Participant participant);
+    boolean add(Participant participant);
 
     public List<Participant> listParticipant();
 

@@ -12,8 +12,8 @@ public class ParticipantServiceImplomentation implements ParticipantService {
     ParticipantRepository participantRepository = new ParticipantRepositoryimpl();
     participantimp participantImplemeDAO = new participantimp();
     @Override
-    public Participant add(Participant participant) {
-        return participantRepository.add(participant);
+    public boolean add(Participant participant) {
+        return true;
     }
     @Override
     public List<Participant> listParticipant() {

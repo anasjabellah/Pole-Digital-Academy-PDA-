@@ -6,14 +6,13 @@ import com.example.digital_academy_pda.Entities.Participant;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import jakarta.persistence.Query;
 
 import java.util.List;
 
 public class participantimp implements participantdao {
     // method to save participant
     @Override
-    public Participant addParticipant(Participant participant) {
+    public boolean addParticipant(Participant participant) {
         // add participant to database using entity manager
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = emf.createEntityManager();
@@ -21,7 +20,7 @@ public class participantimp implements participantdao {
         entityManager.persist(participant);
         entityManager.getTransaction().commit();
         entityManager.close();
-        return participant;
+        return true;
     }
     @Override
     public void editParticipant(Participant participant) {

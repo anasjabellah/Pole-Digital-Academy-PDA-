@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface participantdao {
     // method to save participant
-    public Participant addParticipant(Participant participant);
+    public boolean addParticipant(Participant participant);
 
     public void editParticipant(Participant participant);
 
