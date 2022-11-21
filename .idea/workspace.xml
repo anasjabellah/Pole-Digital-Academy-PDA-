@@ -33,6 +33,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/digital_academy_pda/services/Implimentation/ParticipantServiceImplomentationTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -50,27 +53,30 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2GzY7Pi7ThhByKqS6qlymCdL3lo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/Youcode/IdeaProjects/Digital Academy PDA - Copie",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Youcode/IdeaProjects/Digital Academy PDA - Copie&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.digital_academy_pda.services.Implimentation" />
@@ -93,7 +99,7 @@
       <recent name="com.example.digital_academy_pda.services.Implimentation" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParticipantServiceImplomentationTest.add">
+  <component name="RunManager" selected="JUnit.ParticipantServiceImplomentationTest.remmoveParticipant">
     <configuration name="ParticipantServiceImplomentationTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pole-Digital-Academy-PDA" />
       <extension name="coverage">
@@ -105,6 +111,54 @@
       <option name="PACKAGE_NAME" value="com.example.digital_academy_pda.services.Implimentation" />
       <option name="MAIN_CLASS_NAME" value="com.example.digital_academy_pda.services.Implimentation.ParticipantServiceImplomentationTest" />
       <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticipantServiceImplomentationTest.findByEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pole-Digital-Academy-PDA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.digital_academy_pda.services.Implimentation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.digital_academy_pda.services.Implimentation" />
+      <option name="MAIN_CLASS_NAME" value="com.example.digital_academy_pda.services.Implimentation.ParticipantServiceImplomentationTest" />
+      <option name="METHOD_NAME" value="findByEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticipantServiceImplomentationTest.remmoveParticipant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pole-Digital-Academy-PDA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.digital_academy_pda.services.Implimentation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.digital_academy_pda.services.Implimentation" />
+      <option name="MAIN_CLASS_NAME" value="com.example.digital_academy_pda.services.Implimentation.ParticipantServiceImplomentationTest" />
+      <option name="METHOD_NAME" value="remmoveParticipant" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticipantServiceImplomentationTest.updateParticipant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pole-Digital-Academy-PDA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.digital_academy_pda.services.Implimentation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.digital_academy_pda.services.Implimentation" />
+      <option name="MAIN_CLASS_NAME" value="com.example.digital_academy_pda.services.Implimentation.ParticipantServiceImplomentationTest" />
+      <option name="METHOD_NAME" value="updateParticipant" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,9 +251,22 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Write tests for method participantimp.findByEmail" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="Pole-Digital-Academy-PDA" />
+      <settings run-config-name="Write tests for method participantimp.findByEmail" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="com.example.digital_academy_pda.DAO.implementation.participantimp.findByEmail:(Ljava/lang/String;)Lcom/example/digital_academy_pda/Entities/Participant;" />
+      </settings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParticipantServiceImplomentationTest.remmoveParticipant" />
+        <item itemvalue="JUnit.ParticipantServiceImplomentationTest.updateParticipant" />
         <item itemvalue="JUnit.ParticipantServiceImplomentationTest.add" />
+        <item itemvalue="JUnit.ParticipantServiceImplomentationTest.findByEmail" />
+        <item itemvalue="Diffblue Cover.Write tests for method participantimp.findByEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -224,6 +291,9 @@
       <workItem from="1668506533857" duration="15365000" />
       <workItem from="1668584300910" duration="14162000" />
       <workItem from="1668680684596" duration="1911000" />
+      <workItem from="1668691221357" duration="6254000" />
+      <workItem from="1668782356921" duration="123000" />
+      <workItem from="1669036498006" duration="506000" />
     </task>
     <servers />
   </component>
@@ -240,5 +310,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="participant" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

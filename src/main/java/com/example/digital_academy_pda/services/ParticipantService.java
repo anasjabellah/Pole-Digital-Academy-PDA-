@@ -13,7 +13,7 @@ public interface ParticipantService {
 
     public Participant findByEmail(String email);
 
-    public void updateParticipant(Participant participant);
+    public boolean updateParticipant(Participant participant);
 
     public void remmoveParticipant(int idParticipant);
 

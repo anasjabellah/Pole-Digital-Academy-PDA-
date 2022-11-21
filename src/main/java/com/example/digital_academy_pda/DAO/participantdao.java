@@ -6,7 +6,7 @@ public interface participantdao {
     // method to save participant
     public boolean addParticipant(Participant participant);
 
-    public void editParticipant(Participant participant);
+    public boolean editParticipant(Participant participant);
 
     public void deleteParticipant(int Id);
 
@@ -14,4 +14,5 @@ public interface participantdao {
     // method to get q participant
     public Participant getParticipant(Long Id);
 
+    Participant findByEmail(String email);
 }

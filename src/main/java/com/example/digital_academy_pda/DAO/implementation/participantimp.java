@@ -28,14 +28,21 @@ public class participantimp implements participantdao {
     }
     }
     @Override
-    public void editParticipant(Participant participant) {
-        // edit participant to database using entity manager
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-        EntityManager entityManager = emf.createEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.merge(participant);
-        entityManager.getTransaction().commit();
-        entityManager.close();
+    public boolean editParticipant(Participant participant) {
+        try {
+            // edit participant to database using entity manager
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+            EntityManager entityManager = emf.createEntityManager();
+            entityManager.getTransaction().begin();
+            entityManager.merge(participant);
+            entityManager.getTransaction().commit();
+            entityManager.close();
+            return true;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
     }
     @Override
     public Participant getParticipant(Long id){
@@ -81,5 +88,26 @@ public class participantimp implements participantdao {
         entityManager.getTransaction().commit();
         entityManager.close();
         return participantList;
+    }
+    public Participant findByEmail(String email){
+        // find participant by email to database using entity manager
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+        EntityManager entityManager = emf.createEntityManager();
+        entityManager.getTransaction().begin();
+        Participant participant = new Participant();
+        try {
+            // using entity manager to get participant from database
+            participant = entityManager.createQuery("select p from Participant p where p.email = :email", Participant.class).setParameter("email", email).getSingleResult();
+            entityManager.getTransaction().commit();
+            // return participant
+            System.out.println("email of participant is " + participant.getEmail());
+            return participant;
+        } catch (Exception ex) {
+            entityManager.getTransaction().rollback();
+            ex.printStackTrace();
+            System.out.println("Not working");
+            System.out.println("id of participant is " + email);
+        }
+        return participant;
     }
 }

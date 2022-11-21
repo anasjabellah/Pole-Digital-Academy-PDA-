@@ -16,9 +16,13 @@ public class ParticipantRepositoryimpl implements ParticipantRepository {
         }
     }
     @Override
-    public void edit(Participant participant) {
+    public boolean edit(Participant participant) {
         // TODO Auto-generated method stub
-        participantDao.editParticipant(participant);
+        if (participantDao.editParticipant(participant)){
+            return true;}
+        else {
+            return false;
+        }
     }
     @Override
     public void delete(int id) {
@@ -30,5 +34,8 @@ public class ParticipantRepositoryimpl implements ParticipantRepository {
         // TODO Auto-generated method stub
         return participantDao.getParticipant(id);
     }
-
+    public Participant findByEmail(String email) {
+        // TODO Auto-generated method stub
+        return participantDao.findByEmail(email);
+    }
 }

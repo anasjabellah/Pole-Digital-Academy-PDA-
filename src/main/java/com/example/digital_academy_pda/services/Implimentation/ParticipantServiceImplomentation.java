@@ -30,11 +30,15 @@ public class ParticipantServiceImplomentation implements ParticipantService {
     }
     @Override
     public Participant findByEmail(String email) {
-        return null;
+        return participantImplemeDAO.findByEmail(email);
     }
     @Override
-    public void updateParticipant(Participant participant) {
-        participantRepository.edit(participant);
+    public boolean updateParticipant(Participant participant) {
+        if (participantRepository.edit(participant)){
+            return true;
+        }else {
+            return false;
+        }
     }
     @Override
     public void remmoveParticipant(int idParticipant) {
